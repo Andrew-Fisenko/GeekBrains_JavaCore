@@ -1,0 +1,17 @@
+<Configuration
+        name="JavaCore Logger Configuration"
+        packeges="gb.ru">
+
+    <Appenders>
+        <Console name="STDOUT">
+            <PatternLayout pattern="\n %d{HH:mm:ss} {%t} %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
